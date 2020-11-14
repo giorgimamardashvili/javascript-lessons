@@ -77,12 +77,9 @@
 // მეოთხე დავალება
 
 // function checkAge(age) {
-//     let conf = confirm('Did parents allow you?');
-//     if (age > 18 || conf === true) {
-//         return true;
-//     } else {
-//         return false;
-//     }
+//     
+//     return age > 18 || confirm('Did parents allow you?')
+//      
 // }
 
 // checkAge();
