@@ -86,14 +86,128 @@
 
 // მეხუთე დავალება
 
-function min(a, b) {
-    switch (a, b) {
-        case a > b:
-            return b;
-            break;
-        case a < b:
-            return a;
-            break;
-    }
-}
+// function min(a, b) {
+//     let result;
+//     switch (a > b) {
+//         case true:
+//             result = b;
+//             break;
+//         case false:
+//             result = a;
+//             break;
+//     }
+//     return result;
+// }
 
+// 21.11.2020 
+// დავალება 1
+
+// let user = {};
+// user.name = "John";
+// user.surname = "Smith";
+// user.name = "Pete";
+// delete user.name;
+// console.log(user);
+
+
+// დავალება 2
+
+// let salaries = {
+//     John: 100,
+//     Ann: 160,
+//     Pete: 130
+// };
+// let sum = 0;
+// for(let key in salaries){
+//     sum += salaries[key];
+// }
+// console.log(sum);
+
+// დავალება 3
+
+// let styles = ['jazz', 'blues'];
+// styles.push('Rock-n-Roll');
+
+// let i = (styles.length - 1) / 2;
+// styles[i] = 'Classic';
+// console.log(styles);
+// styles.unshift('Rap', 'Reggae');
+// console.log(styles);
+
+// დავალება 4
+
+// for(let i=2; i <= 10; i++){
+//     if(i%2===0){
+//         console.log(i);
+//     }
+// }
+// let i = 2;
+// while(i <= 10 ){
+//     console.log(i);
+//     i += 2;
+// }
+
+// დავალება 5
+
+// const array = [1, 5, 987, 21, 56, 928, 1, 23, 5, 91, 34, 51];
+// let counter = 0;
+// let odds = (arr) => {
+//     for(let i = 0; i < arr.length; i++){
+//         if(arr[i] % 2 !== 0){
+//             console.log(arr[i]);
+//         }
+//     }
+// }
+// odds(array);
+
+// let odds = (arr) => {
+//     for(let i = 0; i < arr.length; i++){
+//         if(arr[i] % 2 !== 0){
+//             counter++;
+//         }
+//     }
+
+//     return counter;
+// }
+
+// console.log(odds(array));
+
+// let minNumber = (arr) => {
+//     let minNum = arr[0];
+//     for(let i = 0; i < arr.length; i++){
+//         if(minNum > arr[i]){
+//             minNum = arr[i];
+//         }
+//     }
+//     return minNum;
+// };
+// console.log(minNumber(array));
+
+// დავალება 6
+
+// const array = [1, 5, 987, 21, 56, 928, 1, 23, 5, 91, 34, 51];
+// const mult = array.map(x => x*2);
+// console.log(mult);
+
+// დავალება 7
+const array = [
+    {
+        name: 'giorgi',
+        salary: 1000,
+        occupation: 'Web Developer'
+    },
+    {
+        name: 'nika',
+        salary: 1200,
+        occupation: 'Teacher'
+    },
+    {
+        name: 'goga',
+        salary: 1600,
+        occupation: 'Web Developer'
+    }
+];
+const newArr = array.filter(some => some.occupation === 'Web Developer');
+
+const sum = newArr.reduce(((x, y) => x + y.salary), 0);
+console.log(sum);
